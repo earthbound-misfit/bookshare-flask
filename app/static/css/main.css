@@ -6,6 +6,7 @@
   box-sizing: inherit;
 }
 
-/* body {
-  padding-top: 50px;
-} */
+.maintxt {
+  background-image: url(/app/static/images/rainbow-books.jpg);
+  background-size: cover;
+}

@@ -2,23 +2,13 @@
 
 {% block content %}
 
-<section class="bg-dark text-light text-center shadow">
-  <div class="container p-5 bg-dark">
-    <div class="row">
-      <div class="d-md-flex bg-dark align-items-center justify-content-evenly">
-        <h1 class="col text-center">Your Book Shelf</h1>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="bg-light text-center">
-  <div class="container p-5">
-    <div class="row">
-      <div class="d-flex align-items-center justify-content-center">
-        <img src="{{url_for('static', filename='/images/rainbow-books.jpg')}}" class="img-fluid p-5" alt="">
-      </div>
-    </div>
-  </div>
-</section>
 
+<section class="landing-page-home">
+  <div class="background-image">
+    <img src="{{url_for('static', filename='/images/rainbow-books.jpg')}}"
+      class="img-fluid" style="z-index: -1; position: fixed; height: 100%; width: 100%">
+  </div>
+  <h1 class="home-page-header d-flex justify-content-center align-items-center text-white" style="z-index: 1; height: 8em; font-size: 70px">Welcome to BookShare!
+  </h1>
+</section>
 {% endblock %}

@@ -1,34 +1,24 @@
 {% extends 'base.html' %}
 
 {% block content %}
-
-<section class="bg-dark text-light text-center shadow mb-20">
-  <div class="container p-5 bg-dark">
-    <div class="row">
-      <div class="d-md-flex bg-dark align-items-center justify-content-evenly">
-        <h1 class="col text-center">{{ current_user.email }}'s user profile</h1>
-      </div>
-    </div>
+<section class="profile-page">
+  <div class="background-image">
+    <img src="{{url_for('static', filename='/images/rainbow-books.jpg')}}"
+      class="img-fluid"
+      style="z-index: -1; position: fixed; height: 100%; width: 100%">
   </div>
-</section>
-
-<section class="text-center">
-  <div class="container p-10">
-    <div class="row"><br>
-      <h3 class="p-5">Here are your profile details:</h3>
-      <ul class="list-group">
-        <li class="list-group-item">Email: {{ current_user.email }}</li>
-        <li class="list-group-item">Token: {{ current_user.token }}</li>
-      </ul>
-    </div>
-    <div class="row" style="martin-top: 20px">
-      <div class="col-4"></div>
-      <div class="col-3 p-10">
-        <img src="{{url_for('static', filename='/images/rainbow-books.jpg')}}" alt="">
+    <section class="text-center">
+      <div class="container">
+        <div class="row">
+          <h3 class="home-page-header d-flex justify-content-center align-items-center text-white"
+    style="z-index: 1; margin-top: 200px; font-weight: bold">YOUR PROFILE DETAILS:</h3>
+          <ul class="list-group">
+            <li class="list-group-item">Email: {{ current_user.email }}</li>
+            <li class="list-group-item">Token: {{ current_user.token }}</li>
+          </ul>
+        </div>
       </div>
-      <div class="col-3"></div>
-    </div>
-  </div>
+    </section>
 </section>
 
 
