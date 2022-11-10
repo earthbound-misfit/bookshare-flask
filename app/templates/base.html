@@ -25,7 +25,7 @@
         </li>
         {% if current_user.is_authenticated %}
         <li class="nav-item">
-          <a href="{{ url_for('auth.logout') }}" class="nav-link">Bookshelf</a>
+          <a href="{{ url_for('site.bookshelf') }}" class="nav-link">Bookshelf</a>
         </li>
         <li class="nav-item">
           <a href="{{ url_for('site.profile') }}" class="nav-link">Profile</a>

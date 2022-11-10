@@ -9,3 +9,7 @@ def home():
 @site.route('/profile')
 def profile():
   return render_template('profile.html')
+
+@site.route('/bookshelf')
+def bookshelf():
+  return render_template('bookshelf.html')
